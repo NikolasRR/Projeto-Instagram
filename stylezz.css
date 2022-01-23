@@ -75,12 +75,11 @@
 .logoenome div {
     width: 1px;
     height: 22px;
+    background-color: #DBDBDB;
 }
 
 .logoenome img {
     margin-top:5px;
-    width: 103px;
-    height: 29px;
 }
 
 .pesquisar {
@@ -110,26 +109,22 @@
     margin: 0 auto;
     width: 935px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .storieseposts {
     width: 612px;
-    position: relative;
 }
 
 .stories {
     position: relative;
-    align-items: center;
     height: 118px;
-    text-align: center;
-    margin: 0 auto;
     border: 1px solid #DBDBDB; 
     border-radius: 3px;
     width: 612px;
     color: #262626;
     overflow-x: hidden;
+    background: #FFFFFF;
 }
 
 .stories > ion-icon {
@@ -143,26 +138,24 @@
 
 .overflow {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 118px;
     width: 626px;
     margin-left: 18px;
-    text-align: center;
 }
 
 .relative {
     display: flex;
     position: relative;
     align-items: flex-end;
+    text-align: center;
     height: 86px;
     width: 66px;
 }
 
 .relative p {
     width: 76px;
-    margin: 0 auto;
     font-size: 12px;
     line-height: 14.06px;
     font-weight: 400;
@@ -192,8 +185,7 @@
 
 .posts {
     width: 612px;
-    text-align: center;
-    margin: 0 auto 300px 0;
+    background: #FFFFFF;
 }
 
 .post {
@@ -256,14 +248,13 @@
 
 .curtidopor {
     margin-left: 15px;
-    width: 280px;
     height: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .curtidopor img {
+    margin-right: 5px;
     height: 20px;
     width: 20px;
     border-radius: 10px;
@@ -438,13 +429,10 @@ weak {
     font-weight: 300;
 }
 
-strong {
-    font-weight: 500;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: #E5E5E5;
 }
 
 /*Adaptação para gura da tela for menor que 935px */
@@ -452,18 +440,6 @@ body {
 @media (max-width: 935px) {
 	
     .conteudo {
-        width: 612px;
-    }
-
-    .stories {
-        width: 612px;
-    }
-
-    .posts {
-        width: 612px;
-    }
-
-    .post > img {
         width: 612px;
     }
 
