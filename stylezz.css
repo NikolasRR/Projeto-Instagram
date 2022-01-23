@@ -22,7 +22,7 @@
 }
 
 .iconeselogomobile {
-    width: 572px;
+    width: calc(100% - 42);
     height: 54px;
     margin: 0 20px;
     display: flex;
@@ -42,7 +42,7 @@
 }
 
 .iconeseopcoesmobile {
-    width: 572px;
+    width: calc(100% - 42);
     height: 54px;
     margin: 0 20px;
     display: flex;
@@ -120,9 +120,7 @@
 }
 
 .stories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    position: relative;
     align-items: center;
     height: 118px;
     text-align: center;
@@ -131,15 +129,26 @@
     border-radius: 3px;
     width: 612px;
     color: #262626;
+    overflow-x: hidden;
+}
+
+.stories > ion-icon {
+    position: absolute;
+    top: 46px;
+    right: 8px;
+    z-index: 2;
+    font-size: 26px;
+    color: #FFFFFF;
 }
 
 .overflow {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 118px;
-    
+    width: 626px;
+    margin-left: 18px;
     text-align: center;
 }
 
@@ -152,7 +161,6 @@
 }
 
 .relative p {
-    z-index: 2;
     width: 76px;
     margin: 0 auto;
     font-size: 12px;
@@ -191,8 +199,12 @@
 .post {
     border-radius: 3px;
     border: 1px solid #DBDBDB;
-    height: 748px;
     margin-bottom: 60px;
+}
+
+.post video {
+    width: 612px;
+    height: 612px;
 }
 
 .post img {
@@ -249,9 +261,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 300;
 }
 
 .curtidopor img {
@@ -260,16 +269,22 @@
     border-radius: 10px;
 }
 
+.comentario {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+    text-align: left;
+    font-size: 13px;
+}
+
 .sidebar {
-    right: 0;
     text-align: center;
     width: 293px;
-    height: 800px;
 }
 
 .partesuperior {
-    margin-top: 32px;
-    height: 86px;
+    margin-top: 23px;
+    height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -397,8 +412,7 @@ h4 {
     font-weight: 500;
     font-size: 14px;
     line-height: 16.41px;
-    font-weight: 500;
-
+    color: #262626;
 }
 
 weak {
@@ -411,6 +425,7 @@ strong {
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Adaptação para gura da tela for menor que 935px */
@@ -418,12 +433,29 @@ body {
 @media (max-width: 935px) {
 	
     .conteudo {
-    width: 612px;
+        width: 612px;
+    }
+
+    .stories {
+        width: 612px;
+    }
+
+    .posts {
+        width: 612px;
+    }
+
+    .post > img {
+        width: 612px;
     }
 
     .sidebar {
         display: none;
 	}
+
+    body {
+        overflow-x: hidden;
+    }
+
 }
 
 /*Adaptação para gura da tela for menor que 614px */
@@ -457,6 +489,10 @@ body {
         height: 121px;
         width: 100%;
     }
+    
+    .stories > ion-icon {
+        display: none;
+    }
 
     .divisor2 {
         display: none;
@@ -471,9 +507,20 @@ body {
         border-right: none;
         width: 100%;
     }
+
+    .post video {
+        width: 100%;
+    }
     
     .post > img {
         width: 100%;
     }
 
+    .topodopost {
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
