@@ -277,7 +277,26 @@
     font-size: 13px;
 }
 
+.fazercomentario {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin:5px 15px;
+}
+
+.publicar {
+    background-color: #B2DFFC;
+}
+
+.publicar:hover {
+    background-color: #0095F6;
+    transition-duration: 300ms;
+}
+
 .sidebar {
+    position: fixed;
+    top: 88px;
+    left: 858px;
     text-align: center;
     width: 293px;
 }
@@ -479,8 +498,8 @@ body {
     }
 
     .conteudo {
-        margin-top: 54px;
         width: 100%;
+        margin: 54px auto 0 auto;
     }
 
     .stories {
@@ -515,12 +534,5 @@ body {
     .post > img {
         width: 100%;
     }
-
-    .topodopost {
-        width: 100%;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
+    
 }
