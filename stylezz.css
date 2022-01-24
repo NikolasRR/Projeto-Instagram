@@ -270,17 +270,24 @@
 
 .fazercomentario {
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
-    margin:5px 15px;
+    margin:20px 15px 10px 15px;
+    font-size: 26px;
 }
 
-.publicar {
-    background-color: #B2DFFC;
+.fazercomentario input {
+    border: none;
+    width: 480px;
 }
 
-.publicar:hover {
-    background-color: #0095F6;
+.fazercomentario p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #B2DFFC;}
+
+.fazercomentario p:hover {
+    color: #0095F6;
     transition-duration: 300ms;
 }
 
